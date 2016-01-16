@@ -1,0 +1,17 @@
+{
+  "name": "iot-manager-node-emulator",
+  "version": "1.0.0",
+  "description": "iot manager emulator scripts",
+  "main": "demo.js",
+  "scripts": {
+    "demo": "node demo.js",
+    "fillgauge": "node fillgauge.js",
+    "lcd": "node lcd.js",
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "suslov@me.com",
+  "license": "MIT",
+  "dependencies": {
+    "mqtt": "^1.6.3"
+  }
+}
