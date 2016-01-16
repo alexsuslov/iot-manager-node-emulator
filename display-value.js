@@ -1,8 +1,8 @@
 ﻿////////////////////////////////////////////////
 //
-// Demo device emulator for "lcd" widget
+// Demo device emulator for "display-value" widget
 //
-// 4 different colors demo lcd widgets with random data (colors: red, green, blue, yellow)
+// 4 different colors demo display-value widgets with random data (colors: red, green, blue, yellow)
 //
 // IoT Manager https://play.google.com/store/apps/details?id=ru.esp8266.iotmanager
 //
@@ -34,14 +34,14 @@ var deviceID = "uniqueId-0001";
 var prefix   = "/IoTmanager";
 
 var config1 = {"id":"1",
-  page   : "led 1",
-  widget : "lcd",
+  page   : "display 1",
+  widget : "display-value",
   class1 : "item no-border",
   style1 : "",
-  descr  : "LED-1",
+  descr  : "Display-1",
   class2 : "balanced",
   style2 : "font-size:20px;float:left;padding-top:10px;font-weight:bold;",
-  topic  : prefix + "/" + deviceID + "/lcd1",
+  topic  : prefix + "/" + deviceID + "/display1",
   class3 : "",
   style3 : "float:right;",
   height : "40",
@@ -51,14 +51,14 @@ var config1 = {"id":"1",
 };
 
 var config2 = {"id":"2",
-  page   : "led 2",
-  widget : "lcd",
+  page   : "display 2",
+  widget : "display-value",
   class1 : "item no-border",
   style1 : "",
-  descr  : "LED-2",
+  descr  : "Display-2",
   class2 : "assertive",
   style2 : "font-size:20px;float:left;font-weight:bold;",
-  topic  : prefix + "/" + deviceID + "/lcd2",
+  topic  : prefix + "/" + deviceID + "/display2",
   class3 : "",
   style3 : "float:right;",
   height : "20",
@@ -68,14 +68,14 @@ var config2 = {"id":"2",
 };
 
 var config3 = {"id":"3",
-  page   : "led 34",
-  widget : "lcd",
+  page   : "display 34",
+  widget : "display-value",
   class1 : "no-border text-center col-xs-6",
   style1 : "",
-  descr  : "LED-3",
+  descr  : "d-3",
   class2 : "calm",
   style2 : "font-size:32px;padding-top:10px;padding-bottom:20px;font-weight:bold;",
-  topic  : prefix + "/" + deviceID + "/lcd3",
+  topic  : prefix + "/" + deviceID + "/display3",
   class3 : "",
   style3 : "",
   height : "70",
@@ -85,14 +85,14 @@ var config3 = {"id":"3",
 };
 
 var config4 = {"id":"4",
-  page   : "led 34",
-  widget : "lcd",
+  page   : "display 34",
+  widget : "display-value",
   class1 : "no-border text-center col-xs-6",
   style1 : "",
-  descr  : "LED-4",
+  descr  : "d-4",
   class2 : "energized",
   style2 : "font-size:32px;padding-top:10px;padding-bottom:20px;font-weight:bold;",
-  topic  : prefix + "/" + deviceID + "/lcd4",
+  topic  : prefix + "/" + deviceID + "/display4",
   class3 : "",
   style3 : "",
   height : "70",

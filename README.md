@@ -20,8 +20,8 @@ node fillgauge.js
 
 ```
 
-#### lcd
+#### display-value
 ```
-node lcd.js
+node display-value.js
 
 ```
