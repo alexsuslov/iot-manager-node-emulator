@@ -36,7 +36,7 @@ var prefix   = "/IoTmanager";
 var config1 = {"id":"1",
   page   : "joystick",
   widget : "joystick-btn",
-  class1 : "item no-border",
+  class1 : "item no-border no-padding",
   style1 : "",
   descr  : "GamePad",
   class2 : "text-center balanced",
@@ -44,8 +44,8 @@ var config1 = {"id":"1",
   topic  : prefix + "/" + deviceID + "/joystick-btn",
   class3 : "text-center",
   style3 : "",
-  height : "100", // 100, 100px or 100%
   widgetConfig : {
+<<<<<<< HEAD
     // border        : "#FF7777",
     // borderPressed : "#FF7777",
     fill          : "#DDE1DD",
