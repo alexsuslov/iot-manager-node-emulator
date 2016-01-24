@@ -2,7 +2,7 @@
 //
 // Demo device emulator for "joystick-btn" widget
 //
-// 
+//
 //
 // IoT Manager https://play.google.com/store/apps/details?id=ru.esp8266.iotmanager
 //
@@ -46,12 +46,12 @@ var config1 = {"id":"1",
   style3 : "",
   height : "100", // 100, 100px or 100%
   widgetConfig : {
-    border        : "#FF7777",
-    borderPressed : "#FF7777",
-    fill          : "#FF7777",
-    fillPressed   : "#FF7777",
-    arrow         : "#FF7777",
-    arrowЗressed  : "#FF7777",
+    // border        : "#FF7777",
+    // borderPressed : "#FF7777",
+    fill          : "#DDE1DD",
+    fillPressed   : "#101010",
+    arrow         : "#4990E2",
+    arrowPressed  : "#A6CAF3",
     delay         : 200,
     control       : { left:1, up:2, right:3, down:4 } // ???
   }
