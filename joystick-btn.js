@@ -32,28 +32,25 @@ var opt = {
 
 var deviceID = "uniqueId-0002";
 var prefix   = "/IoTmanager";
+var widget   = "joystick-btn4";
 
 var config1 = {"id":"1",
   page   : "joystick",
-  widget : "joystick-btn",
+  widget : widget,
   class1 : "item no-border no-padding",
   style1 : "",
   descr  : "GamePad",
   class2 : "text-center balanced",
   style2 : "font-size:20px;font-weight:bold;",
-  topic  : prefix + "/" + deviceID + "/joystick-btn",
+  topic  : prefix + "/" + deviceID + "/" + widget,
   class3 : "text-center",
   style3 : "",
   widgetConfig : {
-<<<<<<< HEAD
-    // border        : "#FF7777",
-    // borderPressed : "#FF7777",
     fill          : "#DDE1DD",
     fillPressed   : "#101010",
     arrow         : "#4990E2",
     arrowPressed  : "#A6CAF3",
-    delay         : 200,
-    control       : { left:1, up:2, right:3, down:4 } // ???
+    delay         : 200
   }
 };
 
@@ -63,7 +60,7 @@ var client  = mqtt.connect(opt);
 client.on('connect', function () {
   console.log('Broker connected');
   client.subscribe(prefix, { qos : 1 });
-  client.subscribe(prefix + "/" + deviceID + "/joystick-btn/control",{ qos : 1 });
+  client.subscribe(prefix + "/" + deviceID + "/" + widget + "/control",{ qos : 1 });
   pubConfig();
 });
 

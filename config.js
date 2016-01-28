@@ -11,8 +11,8 @@
  */
 
 module.exports ={
-  host : 'm11.cloudmqtt.com',
-  port : 10927,
+  host : 'm20.cloudmqtt.com',
+  port : 13191,
   user : "test",
   pass : "test"
 }

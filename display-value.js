@@ -142,7 +142,7 @@ function pubStatus1() {
 }
 ////////////////////////////////////////////////
 function pubStatus2() {
-      value2 = (50000 - Math.round( Math.random() * 1000000 ))/100;
+      value2 = (Math.round( Math.random() * 1000000000 ));
       console.log("Send status 2:" + value2);
       client.publish( config2.topic + "/status", JSON.stringify({ status: value2 }) );
 }
