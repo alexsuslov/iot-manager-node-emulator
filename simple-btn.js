@@ -38,7 +38,7 @@ var widget   = "simple-btn";
 var id       = "0"
 config[0] = {
   id     : id,
-  page   : "buttons",
+  page   : "b1",
   pageId : 1,
   widget : widget,
   class1 : "item no-border no-padding-bottom",
@@ -59,7 +59,7 @@ config[0] = {
 id = "1"
 config[1] = {
   id     : id,
-  page   : "buttons",
+  page   : "b1",
   pageId : 1,
   widget : widget,
   class1 : "item no-border no-padding-bottom",
@@ -74,8 +74,8 @@ config[1] = {
 id = "2"
 config[2] = {
   id     : id,
-  page   : "buttons",
-  pageId : 1,
+  page   : "b2",
+  pageId : 2,
   widget : widget,
   class1 : "col-xs-2 text-center",
   descr  : "Left",
@@ -87,8 +87,8 @@ config[2] = {
 id = "3"
 config[3] = {
   id     : id,
-  page   : "buttons",
-  pageId : 1,
+  page   : "b2",
+  pageId : 2,
   widget : widget,
   class1 : "col-xs-3 text-center",
   descr  : "Right",
@@ -100,8 +100,8 @@ config[3] = {
 id = "4"
 config[4] = {
   id     : id,
-  page   : "buttons",
-  pageId : 1,
+  page   : "b2",
+  pageId : 2,
   widget : widget,
   class1 : "col-xs-3 text-center",
   descr  : "Up",
@@ -113,8 +113,8 @@ config[4] = {
 id = "5"
 config[5] = {
   id     : id,
-  page   : "buttons",
-  pageId : 1,
+  page   : "b2",
+  pageId : 2,
   widget : widget,
   class1 : "text-center padding-right",
   style1 : "float:right;",
@@ -127,8 +127,8 @@ config[5] = {
 id = "6"
 config[6] = {
   id     : id,
-  page   : "buttons",
-  pageId : 1,
+  page   : "b3",
+  pageId : 3,
   widget : widget,
   class1 : "text-center padding-left padding-right",
   topic  : prefix + "/" + deviceID + "/" + widget + id,
@@ -142,8 +142,8 @@ config[6] = {
 id = "7"
 config[7] = {
   id     : id,
-  page   : "buttons",
-  pageId : 1,
+  page   : "b3",
+  pageId : 3,
   widget : widget,
   class1 : "col-xs-3",
   style1 : "",
@@ -161,8 +161,8 @@ config[7] = {
 id = "8"
 config[8] = {
   id     : id,
-  page   : "buttons",
-  pageId : 1,
+  page   : "b3",
+  pageId : 3,
   widget : widget,
   class1 : "col-xs-3 col-xs-offset-1",
   style1 : "",
@@ -180,8 +180,8 @@ config[8] = {
 id = "9"
 config[9] = {
   id     : id,
-  page   : "buttons",
-  pageId : 1,
+  page   : "b3",
+  pageId : 3,
   widget : widget,
   class1 : "col-xs-3 col-xs-offset-1",
   topic  : prefix + "/" + deviceID + "/" + widget + id,
@@ -195,8 +195,8 @@ config[9] = {
 id = "10"
 config[10] = {
   id     : id,
-  page   : "buttons",
-  pageId : 1,
+  page   : "b3",
+  pageId : 3,
   widget : widget,
   class1 : "padding-left",
   style1 : "float:left;",
@@ -214,8 +214,8 @@ config[10] = {
 id = "11"
 config[11] = {
   id     : id,
-  page   : "buttons",
-  pageId : 1,
+  page   : "b3",
+  pageId : 3,
   widget : widget,
   style1 : "float:right;",
   topic  : prefix + "/" + deviceID + "/" + widget + id,
@@ -229,8 +229,8 @@ config[11] = {
 id = "12"
 config[12] = {
   id     : id,
-  page   : "buttons",
-  pageId : 1,
+  page   : "b4",
+  pageId : 4,
   widget : widget,
   class1 : "item no-border padding-top",
   descr  : "Try long-touch",
@@ -247,8 +247,8 @@ config[12] = {
 id = "13"
 config[13] = {
   id     : id,
-  page   : "buttons",
-  pageId : 1,
+  page   : "b4",
+  pageId : 4,
   widget : widget,
   class1 : "text-center",
   topic  : prefix + "/" + deviceID + "/" + widget + id,
