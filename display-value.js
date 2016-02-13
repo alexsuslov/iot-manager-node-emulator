@@ -6,7 +6,7 @@
 //
 // IoT Manager https://play.google.com/store/apps/details?id=ru.esp8266.iotmanager
 //
-// version     : 1.4
+// version     : 1.5
 // IoT Manager : 1.4.6 and above
 //
 ////////////////////////////////////////////////
@@ -155,35 +155,32 @@ function pubStatus3() {
 ////////////////////////////////////////////////
 function pubStatus4() {
       value4 = Math.round( Math.random() * 99 );
-      console.log("Send status 4:" + value4);
-      client.publish( config4.topic + "/status", JSON.stringify({ status: value4 }) );
+      console.log("Send status 4:" + value4 + " color");
+      client.publish( config4.topic + "/status", JSON.stringify({ status: value4, color : "#000000" }) );
 }
 ////////////////////////////////////////////////
 function pubConfig() {
-    client.publish( prefix, deviceID );
-    setTimeout(function() {
-      client.publish(prefix + "/" + deviceID + "/config", JSON.stringify(config1),{ qos : 1 });
-    }, 500);
+    client.publish(prefix + "/" + deviceID + "/config", JSON.stringify(config1),{ qos : 1 });
     setTimeout(function() {
       pubStatus1();
-    }, 600);
+    }, 200);
     setTimeout(function() {
       client.publish(prefix + "/" + deviceID + "/config", JSON.stringify(config2),{ qos : 1 });
-    }, 700);
+    }, 400);
     setTimeout(function() {
       pubStatus2();
-    }, 800);
+    }, 600);
     setTimeout(function() {
       client.publish(prefix + "/" + deviceID + "/config", JSON.stringify(config3),{ qos : 1 });
-    }, 900);
+    }, 800);
     setTimeout(function() {
       pubStatus3();
     }, 1000);
     setTimeout(function() {
       client.publish(prefix + "/" + deviceID + "/config", JSON.stringify(config4),{ qos : 1 });
-    }, 1100);
+    }, 1200);
     setTimeout(function() {
       pubStatus4();
-    }, 1200);
+    }, 1400);
 }
 ////////////////////////////////////////////////

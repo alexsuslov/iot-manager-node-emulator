@@ -5,7 +5,7 @@
 //
 // IoT Manager https://play.google.com/store/apps/details?id=ru.esp8266.iotmanager
 //
-// version     : 1.0
+// version     : 1.1
 // IoT Manager : 1.4.1 and above
 //
 ////////////////////////////////////////////////
@@ -54,6 +54,7 @@ var client  = mqtt.connect(opt);
 
 client.on('connect', function () {
   console.log('Broker connected');
+  client.subscribe('/IoTmanager/deviceID/+/control');
   client.subscribe('/IoTmanager');
   pubConfig();
 });
@@ -95,12 +96,9 @@ client.on('message', function (topic, message) {
 console.log('Start');
 ////////////////////////////////////////////////
 function pubConfig() {
-    client.publish('/IoTmanager', 'deviceID');
-    client.subscribe('/IoTmanager/deviceID/light1/control');
-    client.subscribe('/IoTmanager/deviceID/light2/control');
+    client.publish('/IoTmanager/deviceID/config', JSON.stringify(config1));
     setTimeout(function() {
-      client.publish('/IoTmanager/deviceID/config', JSON.stringify(config1));
       client.publish('/IoTmanager/deviceID/config', JSON.stringify(config2));
-    }, 500);
+    }, 200);
 }
 ////////////////////////////////////////////////
